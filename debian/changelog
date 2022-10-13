@@ -1,0 +1,62 @@
+node-grunt-contrib-concat (1.0.1-5) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata (already
+    present in machine-readable debian/copyright).
+  * Update standards version to 4.5.0, no changes needed.
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on pkg-js-tools.
+    + node-grunt-contrib-concat: Drop versioned constraint on node-source-map in
+      Depends.
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.5.1, no changes needed.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sun, 29 Aug 2021 02:17:16 +0100
+
+node-grunt-contrib-concat (1.0.1-4) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.0
+  * Add debian/gbp.conf
+  * Switch install to pkg-js-tools
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 03 Aug 2019 15:43:08 +0200
+
+node-grunt-contrib-concat (1.0.1-3) unstable; urgency=medium
+
+  * Team upload
+
+  [ Praveen Arimbrathodiyil ]
+  * run quilt push before grunt clean
+  * add quilt to build deps
+  * don't fail if patches are applied already
+  * update description, tag patch
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 11
+  * Declare compliance with policy 4.3.0
+  * Change section to javascript
+  * Update VCS fields to salsa
+  * Update debian/copyright
+  * Add description in patch
+  * Add upstream/metadata
+  * Refresh patch
+  * Fix source-map ≥ 0.6 calls (Closes: #878337)
+  * Use pkg-js-tools for tests
+  * Add docs/* in docs
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 10 Feb 2019 23:10:02 +0100
+
+node-grunt-contrib-concat (1.0.1-2) unstable; urgency=medium
+
+  * Update copyright (Closes: #846007)
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 10 Dec 2016 11:07:45 +0530
+
+node-grunt-contrib-concat (1.0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #845421)
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 23 Nov 2016 14:11:34 +0530

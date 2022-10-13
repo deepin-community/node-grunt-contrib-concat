@@ -1,0 +1,17 @@
+Description: Fix source-map call with source-map ≥ 0.6
+Author: Xavier Guimard <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/878337
+Forwarded: not-needed
+Last-Update: 2019-02-10
+
+--- a/tasks/lib/sourcemap.js
++++ b/tasks/lib/sourcemap.js
+@@ -37,7 +37,7 @@
+     this.file = file;
+     this.generator = generator;
+     this.addMapping = function(genLine, genCol, orgLine, orgCol, source, name) {
+-      if (!source) {
++      if (!source || orgLine === null || orgCol === null) {
+         generator.addMapping({
+           generated: {line: genLine, column: genCol}
+         });

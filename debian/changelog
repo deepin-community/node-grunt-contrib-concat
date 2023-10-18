@@ -1,3 +1,40 @@
+node-grunt-contrib-concat (2.1.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Update standards version to 4.6.2, no changes needed.
+  * Disable auto build (Closes: #1026654)
+
+ -- Yadd <yadd@debian.org>  Mon, 02 Jan 2023 07:42:07 +0400
+
+node-grunt-contrib-concat (2.1.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Update standards version to 4.6.1, no changes needed.
+  * New upstream version 2.1.0
+
+ -- Yadd <yadd@debian.org>  Tue, 13 Dec 2022 10:55:34 +0100
+
+node-grunt-contrib-concat (1.0.1-7) unstable; urgency=medium
+
+  * Team upload
+  * Fix debian/control
+
+ -- Yadd <yadd@debian.org>  Mon, 17 Jan 2022 09:38:03 +0100
+
+node-grunt-contrib-concat (1.0.1-6) unstable; urgency=medium
+
+  * Team upload
+  * Add missing build dependency on dh addon.
+  * Update standards version to 4.6.0, no changes needed.
+  * Add "Rules-Requires-Root: no"
+  * Modernize debian/watch
+    * Fix filenamemangle
+    * Fix GitHub tags regex
+  * Use dh-sequence-nodejs instead of pkg-js-tools
+  * Drop dependency to nodejs
+
+ -- Yadd <yadd@debian.org>  Thu, 30 Dec 2021 19:17:12 +0100
+
 node-grunt-contrib-concat (1.0.1-5) unstable; urgency=medium
 
   [ Debian Janitor ]

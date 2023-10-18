@@ -5,7 +5,9 @@
 #export DH_VERBOSE=1
 
 %:
-	dh $@ --with nodejs
+	dh $@
+
+override_dh_auto_build:
 
 override_dh_auto_clean:
 	dh_auto_clean

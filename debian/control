@@ -4,26 +4,26 @@ Uploaders: Pirate Praveen <praveen@debian.org>
 Section: javascript
 Priority: optional
 Testsuite: autopkgtest-pkg-nodejs
-Build-Depends: debhelper-compat (= 13),
-               dh-buildinfo,
-               nodejs,
-               grunt,
-               node-grunt-contrib-clean,
-               node-grunt-contrib-nodeunit,
-               node-grunt-contrib-internal,
-               quilt,
-               pkg-js-tools
-Standards-Version: 4.5.1
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , grunt
+ , node-chalk <!nocheck>
+ , node-grunt-contrib-clean
+ , node-grunt-contrib-internal
+ , node-grunt-contrib-nodeunit
+ , node-source-map <!nocheck>
+ , quilt
+Standards-Version: 4.6.2
 Vcs-Browser: https://salsa.debian.org/js-team/node-grunt-contrib-concat
 Vcs-Git: https://salsa.debian.org/js-team/node-grunt-contrib-concat.git
 Homepage: https://github.com/gruntjs/grunt-contrib-concat#readme
+Rules-Requires-Root: no
 
 Package: node-grunt-contrib-concat
 Architecture: all
-Depends: ${misc:Depends},
-         nodejs,
-         node-chalk,
-         node-source-map
+Depends: ${misc:Depends}
+ , node-chalk
+ , node-source-map
 Description: Concatenate files
  This is a plugin for grunt javascript task runner.
  .
